@@ -1,0 +1,88 @@
+:root{
+    --color: #472E32;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color);
+    font-family: 'Lato', sans-serif;
+    flex-direction: column;
+    color: white;
+}
+
+.container{
+    color: #2C3E50;
+    background-color: white;
+    height: fit-content;
+    padding: 3em;
+    border-radius: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 30px;
+}
+
+.button-container{
+    margin-top: 1em;
+    display: flex;
+    padding: .5em;
+    width: 100%;
+    align-self: flex-start;
+    justify-content: space-between;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.twitter, .tumblr{
+    color: white;
+    padding: .2em;
+    background-color: var(--color);
+    border-radius: 5px;
+}
+
+.twitter span,
+.tumblr span{
+    width: 1.2em;
+}
+
+
+.new-quote{
+    padding: .5em;
+    background-color: var(--color);
+    color: white;
+    border-radius: 5px;
+    font-size: .6em;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 500px) {
+    .container{
+        /* border: 2px solid red; */
+        height: fit-content;
+        width: 80%;
+        padding: 1em;
+
+    }
+
+    .quote{
+        /* border: 2px solid red; */
+        margin-top: 1em;
+        gap: 1em;
+    }
+}
